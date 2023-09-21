@@ -21,7 +21,7 @@ const SignUpForm = () => {
         }).catch(error =>{
             console.log(error)
         })
-        navigate('/')
+        navigate('/login')
     }
 
 
