@@ -4,11 +4,13 @@ import {auth} from '../../firebase'
 import { Link } from 'react-router-dom'
 import Navbar from '../Navbar/Navbar'
 import '../Auth/auth.css'
+import { useNavigate } from 'react-router-dom'
 
 
 const SignUpForm = () => {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
+    const navigate = useNavigate()
 
 
     const signUp = (e) =>{
@@ -19,6 +21,7 @@ const SignUpForm = () => {
         }).catch(error =>{
             console.log(error)
         })
+        navigate('/')
     }
 
 
