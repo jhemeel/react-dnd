@@ -27,6 +27,10 @@
 
 }
 
+.drop-zone.no-shadow{
+    box-shadow: none;
+}
+
 
 
 .drop-zone input{

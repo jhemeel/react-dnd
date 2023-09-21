@@ -102,7 +102,7 @@ const Gallery = ({ authUser }) => {
           </div>
         </div>
       ):
-      <div className="drop-zone">
+      <div className="drop-zone no-shadow">
         <Link to="/login">
         <p className="info">Sign Up Or Login to Uplaod / Drag and drop Images </p>
         
