@@ -33,4 +33,6 @@
     right: 5%;
     font-size: var(--font-md);
     color: #c7260a;
+    font-family: 'Poppins', sans-serif;
+    text-transform: lowercase;
 }
