@@ -3,8 +3,7 @@ import { useDropzone } from "react-dropzone";
 import ImageCard from "../ImageCard/ImageCard";
 import "./Gallery.css";
 import { CloudUploadOutlined } from "@mui/icons-material";
-import { useNavigate } from "react-router-dom";
-
+import { Link } from "react-router-dom";
 const Gallery = ({ authUser }) => {
   const [files, setFiles] = useState([]);
 
@@ -103,7 +102,12 @@ const Gallery = ({ authUser }) => {
           </div>
         </div>
       ):
-      <div className="drop-zone"></div>
+      <div className="drop-zone">
+        <Link to="/login">
+        <p className="info">Sign Up Or Login to Uplaod / Drag and drop Images </p>
+        
+        </Link>
+      </div>
       }
 
       <div className="gallery-wrapper">

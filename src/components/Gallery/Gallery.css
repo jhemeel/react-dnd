@@ -27,6 +27,8 @@
 
 }
 
+
+
 .drop-zone input{
     border: none;
 }
@@ -46,6 +48,12 @@
 .drop-zone p{
     opacity: .6;
     color: skyblue;
+}
+.drop-zone .info{
+    font-size: var(--font-md);
+    opacity: unset;
+    text-decoration: underline;
+    
 }
 
 .file-errors{
