@@ -1,0 +1,36 @@
+.hero{
+    padding-top: 20vh;
+    position: relative;
+}
+
+.hero div:first-child{
+    margin: auto;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--font-xlg);
+    font-family: 'Poppins', sans-serif;
+    font-family: 'docktrin';
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #4b4b4b;
+    padding-bottom: 3vh;
+    border-bottom: 2px solid #4b4b4b;
+}
+
+.hero div:first-child > span{
+    text-align: center;
+}
+.hero .teal{
+    color: #038181;
+    text-transform: uppercase;
+}
+
+.user-status{
+    position: absolute;
+    top: 100px;
+    right: 5%;
+    font-size: var(--font-md);
+    color: #ffffff;
+}

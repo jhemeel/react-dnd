@@ -1,0 +1,86 @@
+.navbar-container{
+    padding: 0 5%;
+    box-shadow: -3px 3px 5px 2px rgba(79,75,75,0.79);
+    -webkit-box-shadow: -3px 3px 5px 2px rgba(79,75,75,0.79);
+    -moz-box-shadow: -3px 3px 5px 2px rgba(79,75,75,0.79);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 1440px;
+    margin: auto;
+    z-index: 999;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    min-height: 80px;
+   
+}
+
+
+.navbar .left{
+    flex: 10;
+}
+.navbar .left .logo a{
+    font-family: 'docktrin' ;
+    font-size: var(--font-lg);
+    text-transform: uppercase;
+    color: teal;
+}
+.navbar .center{
+    display: none;
+}
+
+.menu-item{
+    font-family: "typewriter";
+    color: #686363;
+    font-size: var(--font-sm);
+    border-bottom: 3px solid transparent;
+    
+}
+
+.menu-item:hover{
+    border-bottom: 3px solid tomato;
+}
+
+.navbar .right{
+    flex: 2;
+}
+.auth-btn-2{
+    font-size: var(--font-md);
+    padding: 0.5rem 2rem;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    color: #ffffff;
+    background-color: teal;
+    width: 150px;
+}
+
+
+@media screen and (min-width: 480px) {
+    .navbar .left{
+        flex: 9;
+    }
+
+    .navbar .center{
+        flex:  3;
+        display: block;
+    }
+
+    .menu-list{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 4vw;
+
+    }
+
+
+    .navbar .right{
+        display: none;
+    }
+}
