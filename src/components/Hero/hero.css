@@ -31,7 +31,7 @@
     position: absolute;
     top: 100px;
     right: 5%;
-    font-size: var(--font-md);
+    font-size: var(--font-sm);
     color: #c7260a;
     font-family: 'Poppins', sans-serif;
     text-transform: lowercase;
