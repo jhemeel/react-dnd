@@ -8,8 +8,8 @@ const Hero = ({authUser}) => {
         <span>Enter a world of <span className='teal' >Photos</span> & Amazing <br /> <span className='teal'>Awards</span></span>
        {
         authUser &&
-        <strong className="user-status"> logged in as 
-        {authUser.email}
+        <strong className="user-status"> logged in as: 
+        { authUser.email }
       </strong>
        }
       </div>
