@@ -107,10 +107,10 @@ const Gallery = ({ authUser }) => {
       }
 
       <div className="gallery-wrapper">
-        { files.length > 0 ?
+        
         <div className="img-title">Image gallery</div>
-        :''
-        }
+        
+        
         <div className="gallery">
           <ImageCard files={files} />
         </div>
