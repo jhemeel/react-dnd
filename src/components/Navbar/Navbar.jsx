@@ -8,7 +8,7 @@ const Navbar = ({ authUser, userSignOut }) => {
       <div className="navbar">
         <div className="left">
           <div className="logo">
-            <a href="">galerie de photos</a>
+            <Link to="/">galerie de photos</Link>
           </div>
         </div>
         <div className="center">
