@@ -4,6 +4,7 @@ import { auth } from "../../firebase";
 
 import Gallery from '../../components/Gallery/Gellery'
 import Header from '../../components/Header/Header'
+import Login from "../Authenticate/Login";
 
 
 const Home = () => {
@@ -34,8 +35,15 @@ const Home = () => {
 
   return (
     <div>
-      <Header authUser={authUser} userSignOut={userSignOut}/>
-      <Gallery  authUser={authUser} userSignOut={userSignOut}/>
+      {
+        authUser ?
+        <>
+         <Header authUser={authUser} userSignOut={userSignOut}/>
+         <Gallery  authUser={authUser} userSignOut={userSignOut}/>
+        </>: 
+        <><Login/></>
+      }
+     
     </div>
   )
 }
