@@ -43,7 +43,22 @@ const Navbar = ({ authUser, userSignOut }) => {
             </ul>
           </div>
         </div>
-        <div className="right">3</div>
+        <div className="right">
+        { authUser ? (
+                <li className="">
+                <a href="" className="">
+                  <button onClick={userSignOut} className="auth-btn-2">Logout</button>
+                </a>
+              </li>
+              ):
+              (
+                 <li className="">
+                 <a href="" className="">
+                   <Link to="/login"><button className="auth-btn-2">Login</button></Link>
+                 </a>
+               </li>)
+              }
+        </div>
       </div>
     </div>
   );
