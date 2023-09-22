@@ -57,6 +57,7 @@
     font-size: var(--font-md);
     opacity: unset;
     text-decoration: underline;
+    padding:2rem 1rem;
     
 }
 

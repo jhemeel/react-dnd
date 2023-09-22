@@ -89,6 +89,10 @@
 }
 
 @media screen and (max-width: 786px) {
+    .form-container form{
+        width: 90%;
+        text-align: center;
+    }
     .auth-btn{
         position: static;
         width: 100%;
