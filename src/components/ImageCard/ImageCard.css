@@ -10,6 +10,7 @@
     height: 300px;;
     position: center center;
     object-fit: cover;
+    transition: 0.4s;
 }
 
 .card:hover img{
