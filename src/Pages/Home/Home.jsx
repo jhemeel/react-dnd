@@ -40,8 +40,11 @@ const Home = () => {
         <>
          <Header authUser={authUser} userSignOut={userSignOut}/>
          <Gallery  authUser={authUser} userSignOut={userSignOut}/>
-        </>: 
-        <><Login/></>
+         </>:
+         <>
+        <Login/>
+        </>
+
       }
      
     </div>

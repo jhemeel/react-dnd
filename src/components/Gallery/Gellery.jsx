@@ -127,7 +127,7 @@ const Gallery = ({ authUser }) => {
             className="upload-btn"
             onClick={() => {
               const url =
-                "https://api.cloudinary.com/v1_1/dgptjklx1/image/upload";
+                `https://api.cloudinary.com/v1_1/${process.env.REACT_APP_CLOUDINARY_CLOUD_NAME}/image/upload`;
               const formData = new FormData();
               // Use the first item to upload
               let file = files[0];
